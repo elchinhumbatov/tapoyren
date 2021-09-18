@@ -1,6 +1,7 @@
 import s from "./Main.module.scss";
 import { Link } from "react-router-dom";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+import bg from '../../assets/images/main/hero-particles.png';
 
 function Main() {
   return (
@@ -8,7 +9,7 @@ function Main() {
       <section
         className={s.titleWrap}
         style={{
-          background: 'url("./images/main/hero-particles.png") center/cover',
+          background: `url(${bg}) center/cover`,
         }}
       >
         <div className={s.container + " container"}>
