@@ -11,12 +11,12 @@ i18n
     {
       fallbackLng: "az",
       detection: {
-        order: ["cookie", "localStorage", "htmlTag", "path", "subdomain"],
+        order: ["cookie", "localStorage", "htmlTag", "subdomain"],
         caches: ["cookie", "localStorage"],
       },
-      backend: {
-        loadPath: "/langs/{{lng}}/translation.json",
-      },
+      // backend: {
+      //   loadPath: '../assets/langs/{{lng}}/translation.json',
+      // },
       react: { useSuspense: false },
       interpolation: { escapeValue: false },
     },

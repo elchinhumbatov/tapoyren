@@ -23,7 +23,7 @@ function Main() {
             </p>
           </div>
           <div className={s.img}>
-            <img src="./images/main/hero-splash.png" alt="hero splash" />
+            <img src={require('../../assets/images/main/hero-splash.png').default} alt="hero splash" />
           </div>
         </div>
       </section>
@@ -72,7 +72,7 @@ function Main() {
           <div className={s.topCourses}>
             <div className={s.topCourse}>
               <Link to="/about">
-                <img src="/images/courses/course.jpeg" alt="course" />
+                <img src={require('../../assets/images/courses/course.jpeg').default} alt="course" />
               </Link>
               <div className={s.name}>
                 <Link to="/">
@@ -97,7 +97,7 @@ function Main() {
           <div className={s.topPackets}>
             <div className={s.topPacket}>
               <Link to="/about">
-                <img src="/images/courses/course.jpeg" alt="course" />
+                <img src={require('../../assets/images/courses/course.jpeg').default} alt="course" />
               </Link>
               <div className={s.name}>
                 <Link to="/">

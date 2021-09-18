@@ -25,11 +25,11 @@ function Header() {
       <div className={s.left}>
         <div className={s.logo}>
           <Link to="/">
-            <img src="/images/logo.png" alt="logo" />
+            <img src={require('../../assets/images/logo.png').default} alt="logo" />
           </Link>
         </div>
         <div className={s.coursesBtn}>
-          <img src="/images/courses-logo.png" alt="courses logo" />
+          <img src={require('../../assets/images/courses-logo.png').default} alt="courses logo" />
           <p>{t("header.courses")}</p>
         </div>
         <Search />
