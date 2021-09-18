@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/tapoyren/static/css/main.0c528537.chunk.css",
-    "main.js": "/tapoyren/static/js/main.fc0f02b6.chunk.js",
-    "main.js.map": "/tapoyren/static/js/main.fc0f02b6.chunk.js.map",
+    "main.js": "/tapoyren/static/js/main.58cf9d4c.chunk.js",
+    "main.js.map": "/tapoyren/static/js/main.58cf9d4c.chunk.js.map",
     "runtime-main.js": "/tapoyren/static/js/runtime-main.52d34652.js",
     "runtime-main.js.map": "/tapoyren/static/js/runtime-main.52d34652.js.map",
-    "static/js/2.74ee0446.chunk.js": "/tapoyren/static/js/2.74ee0446.chunk.js",
-    "static/js/2.74ee0446.chunk.js.map": "/tapoyren/static/js/2.74ee0446.chunk.js.map",
+    "static/js/2.982f1fea.chunk.js": "/tapoyren/static/js/2.982f1fea.chunk.js",
+    "static/js/2.982f1fea.chunk.js.map": "/tapoyren/static/js/2.982f1fea.chunk.js.map",
     "static/css/3.5d76c13d.chunk.css": "/tapoyren/static/css/3.5d76c13d.chunk.css",
     "static/js/3.30292548.chunk.js": "/tapoyren/static/js/3.30292548.chunk.js",
     "static/js/3.30292548.chunk.js.map": "/tapoyren/static/js/3.30292548.chunk.js.map",
     "index.html": "/tapoyren/index.html",
     "static/css/3.5d76c13d.chunk.css.map": "/tapoyren/static/css/3.5d76c13d.chunk.css.map",
     "static/css/main.0c528537.chunk.css.map": "/tapoyren/static/css/main.0c528537.chunk.css.map",
-    "static/js/2.74ee0446.chunk.js.LICENSE.txt": "/tapoyren/static/js/2.74ee0446.chunk.js.LICENSE.txt",
+    "static/js/2.982f1fea.chunk.js.LICENSE.txt": "/tapoyren/static/js/2.982f1fea.chunk.js.LICENSE.txt",
     "static/media/index.css": "/tapoyren/static/media/din_pro_regular.1c686cd3.otf",
     "static/media/getFetch.cjs": "/tapoyren/static/media/getFetch.582d29c4.cjs"
   },
   "entrypoints": [
     "static/js/runtime-main.52d34652.js",
-    "static/js/2.74ee0446.chunk.js",
+    "static/js/2.982f1fea.chunk.js",
     "static/css/main.0c528537.chunk.css",
-    "static/js/main.fc0f02b6.chunk.js"
+    "static/js/main.58cf9d4c.chunk.js"
   ]
 }
