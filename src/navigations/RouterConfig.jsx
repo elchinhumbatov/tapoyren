@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 
 import ScrollToTop from "../components/ScrollToTop";
 const Main = lazy(() => import("../pages/Main/Main"));
@@ -12,6 +12,7 @@ function RouterConfig() {
       <Suspense fallback={<div>loading..</div>}>
         <Switch>
           <Route path="/" component={Main} exact />
+          <Redirect from="/tapoyren" to="/" />
         </Switch>
       </Suspense>
     </div>
