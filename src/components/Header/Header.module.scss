@@ -1,0 +1,84 @@
+@import "../../assets/styles/base";
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  box-shadow: 0 0 15px #d8d8d8;
+  background: $secondary;
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  .left,
+  .right {
+    display: flex;
+    align-items: center;
+    // width: 42%;
+  }
+}
+.left {
+  padding: 15px;
+  .logo {
+    width: 150px;
+    margin-right: 50px;
+    img {
+      width: 100%;
+    }
+  }
+  .coursesBtn {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    img {
+      width: 20px;
+      margin-right: 7px;
+    }
+  }
+}
+.right {
+  justify-content: flex-end;
+  ul {
+    display: flex;
+    align-items: center;
+    a {
+      padding: 5px 15px;
+      font-size: 1.1em;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+  .divider {
+    height: 50px;
+    width: 1px;
+    background: silver;
+    margin: 0 10px;
+  }
+  .langBtn {
+    position: relative;
+    .langs {
+      position: absolute;
+      right: 0;
+      background: #fff;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, .2);
+      padding: 10px 0;
+      button {
+        display: flex;
+        border: none;
+        outline: none;
+        background: none;
+        padding: 5px 10px;
+        width: 100%;
+        cursor: pointer;
+        &:disabled {
+          cursor: not-allowed;
+        }
+        &:hover {
+          background: #ddd;
+        }
+      }
+    }
+  }
+}
