@@ -8,7 +8,42 @@
     "registration": "Hesab aç"
   },
   "main": {
-    "title": "Tap. Öyrən. İnkişaf et."
+    "title": {
+      "title": "Tap. Öyrən. İnkişaf et.",
+      "text": "Ekspertlər tərəfindən öyrədilən beynəlxalq kvalifikasiya kursları, maliyyə və vergi uçotu, biznes idarəetmə, xarici dil, informasiya texnologiya kursları ilə biliyinizi artırın. Bilik və bacarıqlarınızı bizim peşəkar TapÖyrən videokurslarımız ilə kəşf edin və təkmilləşdirin."
+    },
+    "features": [
+      {"title": "Video Kurslar", "text": "TapÖyrən onlayn video kursları ilə karyeranıza bir addım öndə başlayın. ACCA, CFA, DipIFR, Vergi uçotu, Marketinq, Dizayn və bu kimi digər sahələrdən biliklər əldə edin."},
+      {"title": "Peşəkar Təlimçilər", "text": "Təlimlər öz sahələrinin peşəkarları tərəfindən keçirilir. TapÖyrən-lə təlimçilərə suallar verəcək, onların bilik və təcrübələrindən faydalanacaqsınız. Verilən suallar ən qısa müddətdə cavablandırılır."},
+      {"title": "7/24 Giriş", "text": "Götürdüyünüz abunəlik müddətində siz veb-platformamızdan seçdiyiniz kursa 7/24 giriş əldə edirsiniz, bütün dərsləri görürsünüz. Dərsləri izləyərək biliklərinizi artıracaqsınız."}
+    ]
   },
-  "footer": "bu ayaglifgdir"
+  "footer": {
+    "info": "TapÖyrən öyrənmək, inkişaf etmək, bir sıra bacarıqlara yiyələnmək və peşəkarlaşmaq istəyənlər üçün videokurs platformasıdır.",
+    "categories": {
+      "title": "Öyrənin",
+      "list": [
+        { "url": "/", "text": "Maliyyə və Mühasibatlıq" },
+        { "url": "/", "text": "İnformasiya Texnologiyaları" },
+        { "url": "/", "text": "Məktəb" },
+        { "url": "/", "text": "Biznes" },
+        { "url": "/", "text": "Xarici dillər" }
+      ]
+    },
+    "links": {
+      "title": "Əlaqəli linklər",
+      "list": [
+        { "url": "/about", "text": "Haqqında" },
+        { "url": "/contact", "text": "Əlaqə" },
+        { "url": "/faq", "text": "Ən çox verilən suallar" },
+        { "url": "/terms-and-conditions", "text": "Şərtlər və Qaydalar" }
+      ]
+    },
+    "contacts": {
+      "title": "Haqqında",
+      "adress": "Bakı şəhəri, Yasamal rayonu, Bəxtiyar Vahabzadə küçəsi 5, 2-ci mərtəbə",
+      "phone": {"url": "+994556670057", "text": "+99455 667 00 57"},
+      "email": "SUPPORT@TAPOYREN.COM"
+    }
+  }
 }

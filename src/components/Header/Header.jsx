@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Button from "@material-ui/core/Button";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-
+import SearchIcon from "@material-ui/icons/Search";
 import s from "./Header.module.scss";
 import Search from "./Search/Search";
 
@@ -32,16 +32,17 @@ function Header() {
           <img src={require('../../assets/images/courses-logo.png').default} alt="courses logo" />
           <p>{t("header.courses")}</p>
         </div>
-        <Search />
+        <div className={s.webSearch}><Search /></div>
+        <div className={s.mobSearch}><Link to='/search'><SearchIcon color='primary' /></Link></div>
       </div>
       <div className={s.right}>
         <nav>
           <ul>
             <li>
-              <Link to="/about">{t("header.about")}</Link>
+              <NavLink activeClassName={s.active} to="/about">{t("header.about")}</NavLink>
             </li>
             <li>
-              <Link to="/contact">{t("header.contact")}</Link>
+              <NavLink activeClassName={s.active} to="/contact">{t("header.contact")}</NavLink>
             </li>
             <div className={s.divider}></div>
             <li>

@@ -1,6 +1,5 @@
 @import "../../assets/styles/base";
 
-
 .header {
   display: flex;
   align-items: center;
@@ -43,10 +42,30 @@
     display: flex;
     align-items: center;
     a {
+      position: relative;
       padding: 5px 15px;
       font-size: 1.1em;
+      text-align: center;
       &:hover {
         color: $primary;
+      }
+      &.active {
+        color: $primary;
+      }
+      &.active::after {
+        opacity: 1;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 15%;
+        width: 70%;
+        height: 3px;
+        background: $primary;
+        border-radius: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
       }
     }
   }
@@ -62,7 +81,7 @@
       position: absolute;
       right: 0;
       background: #fff;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, .2);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
       padding: 10px 0;
       button {
         display: flex;
@@ -81,4 +100,35 @@
       }
     }
   }
+}
+.webSearch, .mobSearch {order: 3;}
+.mobSearch {display: none;}
+
+@media (max-width: 990px) {
+  .header {
+    .left {
+      justify-content: space-between;
+      width: 100%;
+      .logo {
+        order: 2;
+        margin-right: 0;
+      }
+      .coursesBtn {
+        order: 1;
+        margin-right: 0;
+      }
+    }
+    .right {
+      display: none;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .coursesBtn {
+    p {
+      display: none;
+    }
+  }
+  .webSearch {display: none;}
+  .mobSearch {display: block;}
 }

@@ -1,5 +1,4 @@
 import SearchIcon from "@material-ui/icons/Search";
-
 import s from "./Search.module.scss";
 import { useTranslation } from "react-i18next";
 
