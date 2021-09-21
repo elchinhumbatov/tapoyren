@@ -1,0 +1,61 @@
+@import '../../assets/styles/base';
+
+.wrapper {
+  p {
+    margin-bottom: 15px;
+  }
+  width: 60%;
+  margin: auto;
+  &>div {
+    margin-bottom: 30px;
+    h5 {
+      margin-bottom: 10px;
+    }
+  }
+}
+.advantages {
+  li {
+    position: relative;
+    margin: 5px 0 5px 30px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: -15px;
+      display: block;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: $primary;
+    }
+  }
+}
+.b2b {
+  .imgs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    &>div {
+      width: 25%;
+      padding: 10px;
+      img {
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 900px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+@media (max-width: 450px) {
+  .b2b {
+    .imgs>div {
+      width: 50%;
+    }
+  }
+}

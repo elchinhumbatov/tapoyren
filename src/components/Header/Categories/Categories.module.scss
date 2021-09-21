@@ -1,0 +1,23 @@
+.coursesBtn {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+  cursor: pointer;
+  img {
+    width: 20px;
+    margin-right: 7px;
+  }
+}
+
+
+@media (max-width: 990px) {
+  .coursesBtn {
+    order: 1;
+    margin-right: 0;
+  }
+}
+@media (max-width: 500px) {
+  .coursesBtn {
+    p { display: none; }
+  }
+}

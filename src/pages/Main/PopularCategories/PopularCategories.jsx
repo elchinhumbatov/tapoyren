@@ -7,7 +7,7 @@ function PopularCategories() {
     <section className={s.popular}>
       <div className="container">
         <div className="title">
-          <h2>Populyar kurslar</h2>
+          <h2>Populyar kateqoriyalar</h2>
         </div>
         <div className={s.popularCourses}>
           <div className={s.popularCourse}>

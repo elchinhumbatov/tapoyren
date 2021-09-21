@@ -52,11 +52,11 @@ function Footer() {
                 </li>
                 <li>
                   <Phone />
-                  <a href={"tel:"+t('footer.contacts.phone.url')}>{t('footer.contacts.phone.text')}</a>
+                  <a href="tel:+994556670057">+99455 667 00 57</a>
                 </li>
                 <li>
                   <MailOutline />
-                  <a href={"mailto:"+t('footer.contacts.email')}>{t('footer.contacts.email')}</a>
+                  <a href="mailto:SUPPORT@TAPOYREN.COM">SUPPORT@TAPOYREN.COM</a>
                 </li>
               </ul>
             </div>

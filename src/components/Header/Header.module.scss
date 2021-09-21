@@ -26,15 +26,6 @@
       width: 100%;
     }
   }
-  .coursesBtn {
-    display: flex;
-    align-items: center;
-    margin-right: 25px;
-    img {
-      width: 20px;
-      margin-right: 7px;
-    }
-  }
 }
 .right {
   justify-content: flex-end;
@@ -113,10 +104,6 @@
         order: 2;
         margin-right: 0;
       }
-      .coursesBtn {
-        order: 1;
-        margin-right: 0;
-      }
     }
     .right {
       display: none;
@@ -124,11 +111,6 @@
   }
 }
 @media (max-width: 500px) {
-  .coursesBtn {
-    p {
-      display: none;
-    }
-  }
   .webSearch {display: none;}
   .mobSearch {display: block;}
 }

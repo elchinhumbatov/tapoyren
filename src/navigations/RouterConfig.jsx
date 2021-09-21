@@ -3,7 +3,8 @@ import { Route, Switch, Redirect } from "react-router-dom";
 
 import ScrollToTop from "../components/ScrollToTop";
 const Main = lazy(() => import("../pages/Main/Main"));
-// const Shops = lazy(() => import("../pages/Shops/Shops"));
+const About = lazy(() => import("../pages/About/About"));
+const Contact = lazy(() => import("../pages/Contact/Contact"));
 
 function RouterConfig() {
   return (
@@ -13,6 +14,8 @@ function RouterConfig() {
         <Switch>
           <Route path="/" component={Main} exact />
           <Redirect from="/tapoyren" to="/" />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
         </Switch>
       </Suspense>
     </div>

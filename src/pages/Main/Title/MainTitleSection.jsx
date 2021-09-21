@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 
 function MainTitleSection() {
-const {t} = useTranslation();
+  const {t} = useTranslation();
 
   return (
     <section

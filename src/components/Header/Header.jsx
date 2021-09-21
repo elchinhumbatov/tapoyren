@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import SearchIcon from "@material-ui/icons/Search";
 import s from "./Header.module.scss";
 import Search from "./Search/Search";
+import Categories from "./Categories/Categories";
 
 
 function Header() {
@@ -28,10 +29,7 @@ function Header() {
             <img src={require('../../assets/images/logo.png').default} alt="logo" />
           </Link>
         </div>
-        <div className={s.coursesBtn}>
-          <img src={require('../../assets/images/courses-logo.png').default} alt="courses logo" />
-          <p>{t("header.courses")}</p>
-        </div>
+        <Categories localeCategories={t("header.courses")} />
         <div className={s.webSearch}><Search /></div>
         <div className={s.mobSearch}><Link to='/search'><SearchIcon color='primary' /></Link></div>
       </div>

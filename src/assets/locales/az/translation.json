@@ -41,9 +41,37 @@
     },
     "contacts": {
       "title": "Haqqında",
-      "adress": "Bakı şəhəri, Yasamal rayonu, Bəxtiyar Vahabzadə küçəsi 5, 2-ci mərtəbə",
-      "phone": {"url": "+994556670057", "text": "+99455 667 00 57"},
-      "email": "SUPPORT@TAPOYREN.COM"
+      "adress": "Bakı şəhəri, Yasamal rayonu, Bəxtiyar Vahabzadə küçəsi 5, 2-ci mərtəbə"
     }
+  },
+  "about": {
+    "title": "Haqqında",
+    "summary": "\"TapÖyrən\" veb platforması \"ALİSHOVS EDUCATİON\" MMC tərəfindən qurulmuşdur. Şirkətimiz bir çox sahələrdə mütəxəssisləşmək, bilik və bacarıqlar qazanmaq, kvalifikasiyalar əldə etmək üçün video kursların hazırlanması, təhsillə əlaqədar məsləhət xidmətləri üzrə ixtisaslaşmışdır. 2020-ci il Yanvar ayından fəaliyyət göstərən şirkətimizin nəzdində yaradılmış TapÖyrən onlayn kurs platforması isə 15 Mart, 2020 tarixindən istifadəçilərin xidmətinə verilmişdir.",
+    "statistics": {
+      "title": "TapÖyrən Göstəriciləri",
+      "text": "TapÖyrən veb-platfomrasında toplamda 7 kateqoriya üzrə 639 saatlıq 2003 video dərsdən ibarət 61 aktiv kurs, ümumi 2307 sualdan ibarət 178 quiz var. Kursların 46-sı Azərbaycan, 10-u İngiliscə, 3-ü Rusca, 2-si Türkcə izahlı kurslardır. İçərisində 1-dən çox kurs olan 9 aktiv paket mövcuddur. Saytda qeydiyyatdan keçən tələbə sayı 3081 nəfər."
+    },
+    "advantages": {
+      "title": "TAPÖYRƏN VİDEO-KURSLARIN FAYDALARI",
+      "text": [
+        "Yer və məkan fərq etmədən internetin olduğu istənilən yerdə kursları izləmək mümkündür",
+        "KPİ hesabatlarında nəaliyyətlərini izləyə bilirlər",
+        "Quizlərdə iştirak edərək nəaliyyət əldə edə bilir və zəif-güclü olduqları mövzuları görürlər",
+        "Sual və Cavab bölümündə suallarını təlimçiyə yönəldə bilirlər",
+        "İstənilən mövzunu istədikləri qədər təkrar təkrar izləyə bilirlər",
+        "Bütün dərslərə girişləri olduğundan istədikləri mövzudan başlaya bilərlər",
+        "24 saat aktiv olduğundan günün istənilən saatı daxil olub dərsləri öyrənə bilirlər",
+        "Kursların qiyməti bazar qiymətlərindən 5-10 qat aşağı olduğundan pullarına qənaət edərək imtahana daha rahat girə bilirlər, həmçinin aşağı büdcəli tələbələr də video kurslardan istifadə edərək bu nəaliyyətlərə sahib ola bilərlər və iş dünyasında rəqabət güclərini artıra bilirlər"
+      ]
+    },
+    "b2b": {
+      "info": "Vebplatformamız fərdi şəxslərdən əlavə B2B əməkdaşlıqlarla şirkət işçilərinə də xidmət edir. \"TapÖyrən\" B2B olaraq sizlərə əməkdaşlarınızın bilik və bacarıqlarını rahatlıqla artıra biləcəkləri kurslardan istifadəsi və KPI hesabatlar ilə nailiyyətlərini rahatlıqla izləyə biləcəyiniz platforma təklif edir.",
+      "partners": "Tərəfdaşlıq etdiyimiz şirkətlər:",
+      "cerf": "Sertifikatar:"
+    }
+  },
+  "contact": {
+    "title": "Əlaqə",
+    "adress": "Yasamal rayonu, Bəxtiyar Vahabzadə 5b, 2-ci mərtəbə"
   }
 }
