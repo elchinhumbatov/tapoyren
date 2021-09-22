@@ -5,6 +5,7 @@ import ScrollToTop from "../components/ScrollToTop";
 const Main = lazy(() => import("../pages/Main/Main"));
 const About = lazy(() => import("../pages/About/About"));
 const Contact = lazy(() => import("../pages/Contact/Contact"));
+const Faq = lazy(() => import("../pages/Faq/Faq"));
 
 function RouterConfig() {
   return (
@@ -16,6 +17,7 @@ function RouterConfig() {
           <Redirect from="/tapoyren" to="/" />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
+          <Route path="/faq" component={Faq} />
         </Switch>
       </Suspense>
     </div>

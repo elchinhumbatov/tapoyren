@@ -1,6 +1,6 @@
 {
   "header": {
-    "courses": "Kurslar",
+    "courses": "Kateqoriyalar",
     "search": "Axtarış",
     "about": "Haqqında",
     "contact": "Əlaqə",
@@ -73,5 +73,11 @@
   "contact": {
     "title": "Əlaqə",
     "adress": "Yasamal rayonu, Bəxtiyar Vahabzadə 5b, 2-ci mərtəbə"
+  },
+  "categories": {
+
+  },
+  "faq": {
+    "title": "Ən çox verilən suallar"
   }
 }

@@ -1,0 +1,21 @@
+@import '../../assets/styles/base';
+
+.faqs {
+  width: 70%;
+  margin: auto;
+  .faq {
+    // margin: 10px 0;
+  }
+  .icon {
+    background: $primary;
+    color: $secondary;
+    border-radius: 5px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .faqs {
+    width: 97%;
+  }
+}
