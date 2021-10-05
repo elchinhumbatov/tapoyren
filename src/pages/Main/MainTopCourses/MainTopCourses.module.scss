@@ -13,53 +13,10 @@
       border-radius: 12px;
       padding: 10px 20px;
       margin: 5px;
-    }
-  }
-}
-.topCourses {
-  display: flex;
-  flex-wrap: wrap;
-  .topCourse {
-    width: calc(100% / 4);
-    padding: 10px;
-    a {
-      display: block;
-    }
-    img {
-      width: 100%;
-      object-fit: cover;
-    }
-    .name {
-      padding: 10px;
-      background: #fff;
-      display: flex;
-      margin-top: -5px;
-      a {
-        font-weight: bold;
+      &:hover {
+        color: #555;
+        border-color: #555;
       }
-    }
-  }
-}
-
-@media (max-width: 950px) {
-  .topCourses {
-    .topCourse {
-      width: calc(100% /3);
-    }
-  }
-}
-@media (max-width: 650px) {
-  .topCourses {
-    .topCourse {
-      width: 50%;
-    }
-  }
-}
-@media (max-width: 450px) {
-  .topCourses {
-    justify-content: center;
-    .topCourse {
-      width: 80%;
     }
   }
 }

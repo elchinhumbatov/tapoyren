@@ -44,10 +44,10 @@ function Header() {
             </li>
             <div className={s.divider}></div>
             <li>
-              <Link to="/login">{t("header.login")}</Link>
+              <NavLink activeClassName={s.active} to="/login">{t("header.login")}</NavLink>
             </li>
             <li>
-              <Link to="/registration">{t("header.registration")}</Link>
+              <NavLink activeClassName={s.active} to="/registration">{t("header.registration")}</NavLink>
             </li>
           </ul>
         </nav>

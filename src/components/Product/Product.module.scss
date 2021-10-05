@@ -1,0 +1,56 @@
+@import "../../assets/styles/base";
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  .product {
+    width: calc(100% / 4);
+    padding: 10px;
+    &:hover a img {
+      transform: scale(1.1);
+    }
+    a {
+      display: block;
+      overflow: hidden;
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    .name {
+      padding: 10px;
+      background: #fff;
+      display: flex;
+      margin-top: -5px;
+      a {
+        font-weight: bold;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .products {
+    .product {
+      width: calc(100% / 3);
+    }
+  }
+}
+@media (max-width: 650px) {
+  .products {
+    .product {
+      width: 50%;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .products {
+    justify-content: center;
+    .product {
+      width: 80%;
+    }
+  }
+}

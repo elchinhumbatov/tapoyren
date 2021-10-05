@@ -1,6 +1,11 @@
 {
   "header": {
-    "welcome": "Welcome to React and react-i18next"
+    "courses": "Courses",
+    "search": "Search",
+    "about": "About",
+    "contact": "Contact",
+    "login": "Login",
+    "registration": "Register"
   },
   "footer": "this is footer"
 }

@@ -79,5 +79,20 @@
   },
   "faq": {
     "title": "Ən çox verilən suallar"
+  },
+  "login": {
+    "text": "öyrənmək, inkişaf etmək, bir sıra bacarıqlara yiyələnmək və peşəkarlaşmaq istəyənlər üçün videokurs platformasıdır.",
+    "form": {
+      "login": "Daxil ol",
+      "registration": "Hesab aç",
+      "remember": "Məni xatırla",
+      "forget": "Şifrəni unutmusunuz?",
+      "email": "E-poçt",
+      "password": "Şifrə",
+      "terms": "Şərtlər və Qaydalar"
+    }
+  },
+  "terms": {
+    "title": "Şərtlər və Qaydalar"
   }
 }

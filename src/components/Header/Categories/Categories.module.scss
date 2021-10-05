@@ -8,6 +8,17 @@
     margin-right: 7px;
   }
 }
+.loginWrap {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #000;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  a {
+    font-weight: bold;
+  }
+}
 
 
 @media (max-width: 990px) {

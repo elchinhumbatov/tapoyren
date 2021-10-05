@@ -1,0 +1,25 @@
+.div {
+  padding: 60px 0;
+  background: #0096ff;
+  h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    animation: pulse 1000ms 2 both;
+    transform-style: preserve-3d;
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}

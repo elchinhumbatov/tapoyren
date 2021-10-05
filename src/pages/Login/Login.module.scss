@@ -1,0 +1,133 @@
+@import "../../assets/styles/base";
+
+.sec {
+  background: #ddd url("../../assets/images/login/auth-bg.png") center/cover
+    no-repeat;
+  min-height: calc(100vh - 82px);
+  .content {
+    display: flex;
+    // align-items: center;
+  }
+}
+.titleWrap {
+  color: $secondary;
+  text-align: center;
+  // padding-top: 50px;
+  h1 {
+    font-size: 4em;
+    margin: 25px 0;
+  }
+  p {
+    font-size: 1.5em;
+  }
+  img {
+    width: 100px;
+  }
+}
+.formBox {
+  min-width: 400px;
+  width: 400px;
+  margin: auto;
+  background: #fff;
+  padding: 50px 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #878787;
+  .toggleBtns {
+    text-align: center;
+    button {
+      font-weight: bold;
+      border: 2px solid $primary;
+      transition: all 0.3s ease;
+      letter-spacing: 1px;
+      background: #fff;
+      color: $primary;
+      transition: background 0.3s ease, color 0.3 ease;
+      &:first-child {
+        border-radius: 8px 0 0 8px;
+      }
+      &:last-child {
+        border-radius: 0 8px 8px 0;
+      }
+      &.active {
+        background: $primary;
+        color: #fff;
+      }
+      a {
+        display: inline-block;
+        padding: 10px 30px;
+      }
+    }
+  }
+}
+.formWrap {
+  padding-top: 15px;
+}
+.formControl {
+  margin: 15px 0;
+  small {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 0.8em;
+    color: #d32f2f;
+  }
+  .select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border: 1px solid silver;
+    border-radius: 4px;
+    &:hover,
+    &:active {
+      border-color: #000;
+    }
+  }
+  .error {
+    color: #d32f2f !important;
+    border-color: #d32f2f !important;
+    select {color: #d32f2f;}
+  }
+}
+.date {
+  display: flex;
+  select:nth-child(1), 
+  select:nth-child(3) {width: 30%;}
+  select:nth-child(2) {width: 40%; margin: 0 3px;}
+}
+.checkboxWrap {
+  margin-left: 10px; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+@media (max-width: 800px) {
+  .formBox {
+    padding: 50px 20px;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .titleWrap {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 420px) {
+  .formBox {
+    min-width: 310px;
+    width: 310px;
+  }
+  .titleWrap {
+    h1 {
+      font-size: 2.5em;
+    }
+    p {
+      font-size: 1.2em;
+    }
+    img {
+      width: 70px;
+    }
+  }
+}

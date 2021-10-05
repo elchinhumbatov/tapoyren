@@ -4,6 +4,12 @@ import MainTopCourses from "./MainTopCourses/MainTopCourses";
 import MainPackets from "./MainPackets/MainPackets";
 import PopularCategories from "./PopularCategories/PopularCategories";
 
+export const dummyData = [
+  {id: 0, url: '/', img: '/', title: 'Vergi Uçotu: Vergi Məcəlləsi və Praktiki Nümunələr', isFavorite: true},
+  {id: 1, url: '/', img: '/', title: 'Vergi Uçotu: Vergi Məcəlləsi və Praktiki Nümunələr', isFavorite: true},
+  {id: 2, url: '/', img: '/', title: 'Vergi Uçotu: Vergi Məcəlləsi və Praktiki Nümunələr', isFavorite: true},
+];
+
 function Main() {
   return (
     <main>

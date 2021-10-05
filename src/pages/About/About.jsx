@@ -44,15 +44,15 @@ function About() {
               </p>
               <p>{t('about.b2b.partners')}</p>
               <div className={s.imgs}>
-                <div><img src={require('../../assets/images/partner.png').default} alt="parntner" /></div>
-                <div><img src={require('../../assets/images/partner.png').default} alt="parntner" /></div>
-                <div><img src={require('../../assets/images/partner.png').default} alt="parntner" /></div>
-                <div><img src={require('../../assets/images/partner.png').default} alt="parntner" /></div>
+                <div><img src={require('../../assets/images/about/partner.png').default} alt="parntner" /></div>
+                <div><img src={require('../../assets/images/about/partner.png').default} alt="parntner" /></div>
+                <div><img src={require('../../assets/images/about/partner.png').default} alt="parntner" /></div>
+                <div><img src={require('../../assets/images/about/partner.png').default} alt="parntner" /></div>
               </div>
             </div>
             <div className={s.cerf}>
               <p>{t('about.b2b.cerf')}</p>
-              <img src={require('../../assets/images/cerf.png').default} alt="certification" />
+              <img src={require('../../assets/images/about/cerf.png').default} alt="certification" />
             </div>
           </div>
         </div>

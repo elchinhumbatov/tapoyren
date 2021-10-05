@@ -5,9 +5,12 @@ import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 
 export default function Categories({localeCategories}) {
+  const {t} = useTranslation();
   const [state, setState] = useState({ left: false });
   const [expanded, setExpanded] = useState(false);
   const arr = ['first', 'second', 'third', 'fourth', 'fifth'];
@@ -23,11 +26,17 @@ export default function Categories({localeCategories}) {
 
   const list = () => (
     <div
-      style={{width: 300, padding: '50px 20px'}}
+      style={{width: 300, padding: '70px 20px'}}
       role="presentation"
       // onClick={toggleCategories(false)}
       onKeyDown={toggleCategories(false)}
     >
+      <div className={s.loginWrap}>
+        <p onClick={toggleCategories(false)}>
+          <NavLink activeClassName={s.active} to="/login">{t("header.login")}</NavLink> ve ya 
+          <NavLink activeClassName={s.active} to="/registration"> {t("header.registration")}</NavLink>
+        </p>
+      </div>
       <div className={s.categories}>
         {arr.map((item, idx)=>{
           return (
@@ -45,9 +54,6 @@ export default function Categories({localeCategories}) {
             </Accordion>
           )
         })}
-      </div>
-      <div className={s.nav}>
-        nav
       </div>
     </div>
   );

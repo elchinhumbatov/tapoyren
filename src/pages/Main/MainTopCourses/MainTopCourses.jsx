@@ -1,7 +1,8 @@
 import React from "react";
 import s from "./MainTopCourses.module.scss";
-import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import { Link } from "react-router-dom";
+import Product from '../../../components/Product/Product';
+import { dummyData } from '../Main';
 
 function MainTopCourses() {
   return (
@@ -16,88 +17,7 @@ function MainTopCourses() {
           <Link to="/">İngiliscə</Link>
           <Link to="/">İnsan resursları</Link>
         </div>
-        <div className={s.topCourses}>
-          <div className={s.topCourse}>
-            <Link to="/about">
-              <img
-                src={
-                  require("../../../assets/images/courses/course.jpeg").default
-                }
-                alt="course"
-              />
-            </Link>
-            <div className={s.name}>
-              <Link to="/">
-                Vergi Uçotu: Vergi Məcəlləsi və Praktiki Nümunələr
-              </Link>
-              <FavoriteBorderIcon />
-            </div>
-          </div>
-          <div className={s.topCourse}>
-            <Link to="/about">
-              <img
-                src={
-                  require("../../../assets/images/courses/course.jpeg").default
-                }
-                alt="course"
-              />
-            </Link>
-            <div className={s.name}>
-              <Link to="/">
-                Vergi Uçotu: Vergi Məcəlləsi və Praktiki Nümunələr
-              </Link>
-              <FavoriteBorderIcon />
-            </div>
-          </div>
-          <div className={s.topCourse}>
-            <Link to="/about">
-              <img
-                src={
-                  require("../../../assets/images/courses/course.jpeg").default
-                }
-                alt="course"
-              />
-            </Link>
-            <div className={s.name}>
-              <Link to="/">
-                Vergi Uçotu: Vergi Məcəlləsi və Praktiki Nümunələr
-              </Link>
-              <FavoriteBorderIcon />
-            </div>
-          </div>
-          <div className={s.topCourse}>
-            <Link to="/about">
-              <img
-                src={
-                  require("../../../assets/images/courses/course.jpeg").default
-                }
-                alt="course"
-              />
-            </Link>
-            <div className={s.name}>
-              <Link to="/">
-                Vergi Uçotu: Vergi Məcəlləsi və Praktiki Nümunələr
-              </Link>
-              <FavoriteBorderIcon />
-            </div>
-          </div>
-          <div className={s.topCourse}>
-            <Link to="/about">
-              <img
-                src={
-                  require("../../../assets/images/courses/course.jpeg").default
-                }
-                alt="course"
-              />
-            </Link>
-            <div className={s.name}>
-              <Link to="/">
-                Vergi Uçotu: Vergi Məcəlləsi və Praktiki Nümunələr
-              </Link>
-              <FavoriteBorderIcon />
-            </div>
-          </div>
-        </div>
+        <Product data={dummyData} />
         <div className="title" style={{ marginTop: "25px" }}>
           <h2>
             <Link to="/">Bütün Kurslar</Link>

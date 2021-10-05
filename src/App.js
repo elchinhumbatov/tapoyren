@@ -13,6 +13,19 @@ const theme = createTheme({
       main: "#0096ff",
     }
   },
+  // typography: {
+  //   fontFamily: 'DinReg'
+  // },
+  // components: {
+  //   MuiCssBaseline: {
+  //     styleOverrides: `
+  //       @font-face {
+  //         font-family: 'DinReg';
+  //         src: url(./assets/fonts/din_pro_regular.otf) format('opentype');
+  //       }
+  //     `,
+  //   },
+  // },
 });
 
 function App() {

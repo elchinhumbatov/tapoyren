@@ -1,9 +1,13 @@
+@import './assets/styles/base';
+
+
 .container {
   max-width: 1140px;
   margin: auto;
 }
 section {
   padding: 60px 5px;
+  background-color: $secondary;
 }
 .title {
   text-align: center;

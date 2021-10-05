@@ -1,6 +1,11 @@
 {
   "header": {
-    "welcome": "dobro pojalovat"
+    "courses": "Курсы",
+    "search": "Поиск",
+    "about": "О нас",
+    "contact": "Kонтакты",
+    "login": "Войти",
+    "registration": "Регистрация"
   },
   "footer": "eto podnojka"
 }

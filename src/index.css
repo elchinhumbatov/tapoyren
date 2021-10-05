@@ -11,3 +11,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.css-1pysi21-MuiFormLabel-root-MuiInputLabel-root, .css-ahj2mt-MuiTypography-root, .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
+  font-family: "DinReg" !important;
+}
+.css-ahj2mt-MuiTypography-root {
+  padding-top: 4px;
+}

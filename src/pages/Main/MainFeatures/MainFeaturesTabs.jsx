@@ -46,7 +46,7 @@ export default function MainFeatureTabs({ features }) {
           allowScrollButtonsMobile
         >
           {features.map((item) => (
-            <Tab key={item.title} label={item.title} />
+            <Tab key={item.title} label={item.title} style={{margin: '0 7px'}} />
           ))}
         </Tabs>
         {features.map((item, idx) => {
