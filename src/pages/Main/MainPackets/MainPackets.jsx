@@ -1,16 +1,16 @@
 import React from "react";
 import ss from './MainPackets.module.scss'
 import Product from "../../../components/Product/Product";
-import { dummyData } from '../Main';
+import { dummyPacks } from '../Main';
 
 function MainPackets() {
   return (
     <section className={ss.packets}>
       <div className="container">
-        <div className="title">
+        <div className="mainPageTitle">
           <h2>Paketlər</h2>
         </div>
-        <Product data={dummyData} />
+        <Product data={dummyPacks} />
       </div>
     </section>
   );

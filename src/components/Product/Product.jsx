@@ -9,16 +9,18 @@ function Product({ data }) {
     <div className={s.products}>
       {data && data.map((item) => {
         return (
-          <div className={s.product} key={item.id}>
-            <Link to={item.url}>
-              <img
-                src={require("../../assets/images/courses/course.jpeg").default}
-                alt="course"
-              />
-            </Link>
-            <div className={s.name}>
-              <Link to={item.url}>{item.title}</Link>
-              {item.isFavorite ? <Favorite color="primary" /> : <FavoriteBorder />}
+          <div className={s.productWrap} key={item.id}>
+            <div className={s.product}>
+              <Link to={item.url}>
+                <img
+                  src={require("../../assets/images/courses/course.jpeg").default}
+                  alt="course"
+                />
+              </Link>
+              <div className={s.name}>
+                <Link to={item.url}>{item.title}</Link>
+                {item.isFavorite ? <Favorite color="primary" /> : <FavoriteBorder />}
+              </div>
             </div>
           </div>
         );

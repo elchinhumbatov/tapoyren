@@ -8,7 +8,7 @@ function MainTopCourses() {
   return (
     <section className={s.top}>
       <div className="container">
-        <div className="title">
+        <div className="mainPageTitle">
           <h2>Top kurslar</h2>
         </div>
         <div className={s.topLinks}>
@@ -18,7 +18,7 @@ function MainTopCourses() {
           <Link to="/">İnsan resursları</Link>
         </div>
         <Product data={dummyData} />
-        <div className="title" style={{ marginTop: "25px" }}>
+        <div className="mainPageTitle" style={{ paddingTop: "25px" }}>
           <h2>
             <Link to="/">Bütün Kurslar</Link>
           </h2>

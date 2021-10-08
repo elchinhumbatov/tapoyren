@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
@@ -26,8 +26,14 @@ function TabPanel(props) {
 export default function MainFeatureTabs({ features }) {
   const [value, setValue] = useState(0);
   const [ww, setWw] = useState(window.innerWidth);
+  const wwSetter = () => setWw(window.innerWidth);
 
-  window.addEventListener("resize", () => setWw(window.innerWidth));
+  useEffect(() => {
+    window.addEventListener("resize", wwSetter);
+    return () => {
+      window.removeEventListener('resize', wwSetter);
+    }
+  }, [])
 
   const handleChange = (event, newValue) => {
     setValue(newValue);

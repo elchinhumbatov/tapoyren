@@ -1,0 +1,14 @@
+.section {
+  padding: 0;
+  display: flex;
+}
+.sidebarWrap {width: 25%;}
+.arrowBtn {
+  display: none;
+  padding: 20px 0 0 20px;
+}
+
+@media (max-width: 800px) {
+  .sidebarWrap {display: none;}
+  .arrowBtn {display: block;}
+}

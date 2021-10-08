@@ -1,25 +1,31 @@
 .div {
-  padding: 60px 0;
+  padding: 60px 5px;
   background: #0096ff;
   h2 {
     font-size: 2em;
     text-align: center;
     color: #fff;
-    animation: pulse 1000ms 2 both;
+    animation: fadeInLeft 800ms both;
     transform-style: preserve-3d;
   }
 }
 
-@keyframes pulse {
+@keyframes fadeInLeft {
   from {
-    transform: scale3d(1, 1, 1);
-  }
-
-  50% {
-    transform: scale3d(1.05, 1.05, 1.05);
+      opacity: 0;
+      transform: translate3d(-100%, 0, 0);
   }
 
   to {
-    transform: scale3d(1, 1, 1);
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+  }
+}
+
+
+@media (max-width: 450px) {
+  .div { 
+    padding: 30px 7px;
+    h2 {font-size: 1.5em;}
   }
 }

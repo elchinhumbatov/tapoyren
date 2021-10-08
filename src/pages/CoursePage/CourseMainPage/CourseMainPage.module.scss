@@ -1,0 +1,275 @@
+@import "../../../assets/styles/base";
+
+.mainCoursePage {
+  padding: 20px;
+  width: 75%;
+}
+.wrapper {
+  background: #fff;
+  padding: 20px;
+  border-radius: 7px;
+  transition: box-shadow 0.3s linear;
+  margin-bottom: 30px;
+  &:hover {
+    box-shadow: 0 0 10px gray;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  h6 {
+    font-size: 16px;
+  }
+  h2 {
+    text-align: center;
+    font-size: 2em;
+  }
+}
+.summary {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  .imgWrap {
+    clip-path: polygon(
+      50% 0,
+      90% 20%,
+      100% 60%,
+      75% 100%,
+      25% 100%,
+      0 60%,
+      10% 20%
+    );
+    min-width: 170px;
+    height: 170px;
+    background: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      clip-path: polygon(
+        50% 0,
+        90% 20%,
+        100% 60%,
+        75% 100%,
+        25% 100%,
+        0 60%,
+        10% 20%
+      );
+      min-width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+  }
+  .text {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .rateAndInstructor {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 10px 0;
+      .instructor {
+        text-align: center;
+        p {
+          color: gray;
+        }
+      }
+      .rate {
+        p {
+          font-size: 0.9em;
+        }
+        span {
+          color: $primary;
+        }
+      }
+    }
+    .actionBtns {
+      text-align: center;
+      a {
+        display: inline-block;
+        button {
+          margin: 5px;
+          width: 150px;
+        }
+      }
+      
+    }
+  }
+}
+.about {
+  h3,
+  h4 {
+    margin-bottom: 25px;
+  }
+  p {
+    margin: 10px 0;
+    line-height: 1.3em;
+  }
+  & > div {
+    margin-bottom: 25px;
+  }
+  .whatWillLearn {
+    p {
+      display: flex;
+      align-items: center;
+      margin: 0;
+    }
+    svg {
+      margin-right: 7px;
+    }
+  }
+}
+.rateAndPopular {
+  display: flex;
+  .wrapper {
+    width: 50%;
+  }
+  .wrapper:first-child {
+    margin-right: 15px;
+  }
+  .courseRating {
+    .ratingSummary {
+      padding: 20px 0;
+      text-align: center;
+      h2 {
+        margin-bottom: 10px;
+      }
+      span {
+        color: $primary;
+      }
+    }
+    .rateDetails {
+      padding: 15px 0;
+      .rates {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .rateBar,
+        .ratePercent {
+          height: 15px;
+          width: 40%;
+          border-radius: 7px;
+          background: silver;
+        }
+        .ratePercent {
+          background: $primary;
+        }
+      }
+    }
+  }
+}
+.popularCoursesWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .popularCourses {
+    margin: 15px 0;
+    .popularCourse {
+      display: flex;
+      align-items: center;
+      margin: 7px 0;
+      .popularCourseImg {
+        min-width: 50px;
+        min-height: 50px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 10px;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .popularCourseText {
+        a {
+          display: inline-block;
+        }
+        p {
+          font-size: 0.9em;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+  .btn {
+    text-align: center;
+    a {
+      display: inline-block;
+      width: 70%;
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .wrapper {
+    h2 {
+      font-size: 24px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 16px;
+    }
+    h6 {
+      font-size: 14px;
+    }
+  }
+  .rateAndPopular {
+    display: block;
+    .wrapper {
+      width: 100%;
+    }
+  }
+  .summary {
+    .imgWrap {
+      min-width: 110px;
+      height: 110px;
+      img {
+        min-width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .mainCoursePage {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper {
+    padding: 20px 10px;
+  }
+  .summary {
+    display: block;
+    text-align: center;
+    .imgWrap {
+      width: 110px;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+    .text {
+      .rateAndInstructor {
+        display: block;
+        .instructor {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  .popularCoursesWrap .btn {
+    a {
+      width: 90%;
+    }
+  }
+}

@@ -10,7 +10,7 @@ function Contact() {
   return (
     <div>
       <PageTitle title={t("contact.title")} />
-      <section style={{minHeight: '65vh'}}>
+      <section className='minH'>
         <div className="container">
           <div className={s.wrapper}>
             <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>

@@ -1,0 +1,92 @@
+@import "../../../assets/styles/base";
+
+.sidebar {
+  min-width: 230px;
+  padding: 10px;
+  background: #fff;
+  h4 {
+    text-align: center;
+  }
+}
+.imgBox {
+  text-align: center;
+  img {
+    width: 70%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px gray;
+  }
+}
+.shortInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px 0 40px;
+  p {
+    font-size: 0.9em;
+    &:last-child {
+      color: gray;
+    }
+  }
+  .divider {
+    height: 15px;
+    width: 1px;
+    background: silver;
+  }
+}
+.sidebarVideos {
+  padding-top: 30px;
+  .active {
+    background: $primary;
+    color: #fff;
+  }
+  .moduleInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    p:last-child {
+      margin-left: 10px;
+      font-size: 0.8em;
+      font-weight: bold;
+      span {
+        font-weight: normal;
+      }
+    }
+  }
+  .videoInfo {
+    padding: 5px 0;
+    border-bottom: 1px solid gray;
+    a {
+      display: inline-flex;
+      align-items: center;
+      &:hover p:last-child {
+        color: $primary;
+      }
+      p:first-child {
+        text-align: center;
+        margin-right: 7px;
+        font-size: 0.8em;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .shortInfo {
+    display: block;
+    text-align: unset;
+    &>div {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin: 3px 0;
+    }
+    .divider {display: none;}
+  }
+}
+
+@media (max-width: 800px) {
+  .sidebar {width: 100%;}
+}

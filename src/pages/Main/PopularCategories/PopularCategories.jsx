@@ -6,7 +6,7 @@ function PopularCategories() {
   return (
     <section className={s.popular}>
       <div className="container">
-        <div className="title">
+        <div className="mainPageTitle">
           <h2>Populyar kateqoriyalar</h2>
         </div>
         <div className={s.popularCourses}>

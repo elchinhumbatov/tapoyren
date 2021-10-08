@@ -5,9 +5,14 @@ import MainPackets from "./MainPackets/MainPackets";
 import PopularCategories from "./PopularCategories/PopularCategories";
 
 export const dummyData = [
-  {id: 0, url: '/', img: '/', title: 'Vergi Uçotu: Vergi Məcəlləsi və Praktiki Nümunələr', isFavorite: true},
-  {id: 1, url: '/', img: '/', title: 'Vergi Uçotu: Vergi Məcəlləsi və Praktiki Nümunələr', isFavorite: true},
-  {id: 2, url: '/', img: '/', title: 'Vergi Uçotu: Vergi Məcəlləsi və Praktiki Nümunələr', isFavorite: true},
+  {id: 0, url: '/course/123', img: '/', title: 'Vergi Uçotu: Vergi Məcəlləsi və Praktiki Nümunələr Məcəlləsi və Praktiki Nümunələr', isFavorite: true},
+  {id: 1, url: '/course/123', img: '/', title: 'Vergi Uçotu: Vergi Məcəlləsi və Praktiki Nümunələr', isFavorite: true},
+  {id: 2, url: '/course/123', img: '/', title: 'Vergi Uçotu: Vergi Məcəlləsi və Praktiki Nümunələr', isFavorite: true},
+];
+export const dummyPacks = [
+  {id: 0, url: '/package/123', img: '/', title: 'Vergi Uçotu: Vergi Məcəlləsi və Praktiki Nümunələr Məcəlləsi və Praktiki Nümunələr', isFavorite: true},
+  {id: 1, url: '/package/123', img: '/', title: 'Vergi Uçotu: Vergi Məcəlləsi və Praktiki Nümunələr', isFavorite: true},
+  {id: 2, url: '/package/123', img: '/', title: 'Vergi Uçotu: Vergi Məcəlləsi və Praktiki Nümunələr', isFavorite: true},
 ];
 
 function Main() {

@@ -8,8 +8,7 @@ export default function ScrollToTop() {
   const history = useHistory();
 
   useEffect(() => {
-    if (history.action === "POP") return;
-    window.scrollTo(0, 0);
+    if (history.action !== "POP") return window.scrollTo(0, 0);
   }, [pathname, history.action]);
 
   return null;
