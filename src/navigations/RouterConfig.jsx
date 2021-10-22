@@ -4,6 +4,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import ScrollToTop from "../components/ScrollToTop";
 import NotFound from '../pages/NotFound/NotFound';
 import Main from '../pages/Main/Main';
+import Loader from '../components/Loader/Loader';
 const About = lazy(() => import("../pages/About/About"));
 const Contact = lazy(() => import("../pages/Contact/Contact"));
 const Search = lazy(() => import("../pages/Search/SearchPage"));
@@ -18,7 +19,7 @@ function RouterConfig() {
   return (
     <div>
       <ScrollToTop />
-      <Suspense fallback={<div className='minH' id='loader-overlay'><div id="lds-ripple"><div></div><div></div></div></div>}>
+      <Suspense fallback={<div className='minH' id='loader-overlay'><Loader /></div>}>
         <Switch>
           <Route path="/" component={Main} exact />
           <Redirect from="/tapoyren" to="/" />

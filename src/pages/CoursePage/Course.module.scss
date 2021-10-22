@@ -5,7 +5,14 @@
 .sidebarWrap {width: 25%;}
 .arrowBtn {
   display: none;
-  padding: 20px 0 0 20px;
+  position: relative;
+  padding: 20px;
+  background: #fff;
+  height: 100%;
+  svg {
+    position: sticky;
+    top: 90px;
+  }
 }
 
 @media (max-width: 800px) {

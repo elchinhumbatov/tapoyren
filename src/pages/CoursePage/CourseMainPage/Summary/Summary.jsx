@@ -1,14 +1,13 @@
 import React, {useState} from "react";
 import s from "../CourseMainPage.module.scss";
-import { Link, Route, Switch, useRouteMatch } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Rating from '@mui/material/Rating';
 import img from "../../../../assets/images/courses/course.jpeg";
-import VideoPlayer from "./VideoPlayer/VideoPlayer";
 import { Button } from "@mui/material";
 
 
 function Summary() {
-  const { url } = useRouteMatch();
+  
   const [value, setValue] = useState(0);
   return (
     <>
@@ -40,11 +39,6 @@ function Summary() {
           </div>
         </div>
       </div>
-      <Switch>
-        <Route path={url} component={() => null} exact />
-        <Route path={url + "/video/:id"} component={() => <VideoPlayer url={url} />}
-        />
-      </Switch>
     </>
   );
 }
